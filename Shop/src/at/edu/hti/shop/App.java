@@ -1,11 +1,12 @@
 package at.edu.hti.shop;
 
 import at.edu.hti.shop.domain.Order;
+import at.edu.hti.shop.domain.OrderException;
 import at.edu.hti.shop.domain.OrderLine;
 import at.edu.hti.shop.domain.Product;
 
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws OrderException {
 
 		Order shopOrder = new Order();
 
@@ -20,18 +21,22 @@ public class App {
 		System.out.println(shopOrder.size());
 		System.out.println(shopOrder);
 
-		shopOrder.get(0).setAmount(8);
+		shopOrder.updateAmount(shopOrder.get(0),8);
 
 		System.out.println(shopOrder.size());
 		System.out.println(shopOrder);
 
-		shopOrder.get(1).setAmount(0);
+		shopOrder.updateAmount(shopOrder.get(1),0);
 
 		System.out.println(shopOrder.size());
 		System.out.println(shopOrder);
 
 		shopOrder.add(line3);
 		shopOrder.add(line4);
+		
+	
+		
+//		shopOrder.updateAmount(new OrderLine(new Product(3, "Pfirsich", 2.2), 5),0);
 
 	}
 }

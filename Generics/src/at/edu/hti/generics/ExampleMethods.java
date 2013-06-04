@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 public class ExampleMethods {
 
 	// siehe http://www.torsten-horn.de/techdocs/java-generics.htm
-
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 

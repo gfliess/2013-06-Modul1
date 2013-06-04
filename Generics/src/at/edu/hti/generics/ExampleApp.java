@@ -1,6 +1,7 @@
 package at.edu.hti.generics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ExampleApp {
@@ -13,7 +14,7 @@ public class ExampleApp {
 		Number[] a = new Integer[1];
 		a[0] = new Double(3.14);
 
-		// ArrayList<Number> a = new ArrayList<Integer>();
+//		 ArrayList<Number> a = new ArrayList<Integer>();
 
 		Comparable<String> t1 = "Test";
 		String s1 ="Test1";

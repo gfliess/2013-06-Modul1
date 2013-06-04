@@ -14,7 +14,7 @@ public class OrderLine {
 		return amount;
 	}
 
-	public void setAmount(int amount) {
+	 void setAmount(int amount) {
 		this.amount = amount;
 	}
 

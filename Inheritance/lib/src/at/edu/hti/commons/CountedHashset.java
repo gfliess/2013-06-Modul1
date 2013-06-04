@@ -18,11 +18,11 @@ public class CountedHashset<E> extends HashSet<E> {
 		return super.add(e);
 	}
 
-	@Override
-	public boolean addAll(Collection<? extends E> c) {
-		addCount += c.size();
-		return super.addAll(c);
-	}
+//	@Override
+//	public boolean addAll(Collection<? extends E> c) {
+//		addCount += c.size();
+//		return super.addAll(c);
+//	}
 
 	@Override
 	public boolean remove(Object o) {
@@ -30,11 +30,11 @@ public class CountedHashset<E> extends HashSet<E> {
 		return super.remove(o);
 	}
 
-	@Override
-	public boolean removeAll(Collection<?> c) {
-		deleteCount -= c.size();
-		return super.removeAll(c);
-	}
+//	@Override
+//	public boolean removeAll(Collection<?> c) {
+//		deleteCount -= c.size();
+//		return super.removeAll(c);
+//	}
 
 	public int getAddCount() {
 		return addCount;

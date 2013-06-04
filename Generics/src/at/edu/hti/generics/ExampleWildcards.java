@@ -6,6 +6,7 @@ import java.util.List;
 public class ExampleWildcards {
 
 	// siehe http://www.torsten-horn.de/techdocs/java-generics.htm
+	// http://www.angelikalanger.com/Articles/JavaMagazin/Generics/GenericsPart1.html
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
